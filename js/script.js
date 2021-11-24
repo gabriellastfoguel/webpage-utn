@@ -202,7 +202,11 @@ input_search.addEventListener("blur",()=>{
    })
 })
 
+const btn_enviar=document.querySelector(".btn_enviar");
 
+btn_enviar.addEventListener("click",()=>{
+    location.hash="#enviar"
+})
 
 // document.addEventListener("scroll",()=>{
 //     const cards_comida=document.querySelector(".cards_comida");

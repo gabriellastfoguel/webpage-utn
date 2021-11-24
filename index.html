@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="theme-color" content="#191919"> 
+    <meta name="theme-color" content="#fa7b26"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
@@ -36,7 +36,7 @@
                     <ul class="menu-ul">
                         <li class="menu-li"><a href="#comida"><i class="fas fa-hamburger"></i>Comida</a></li>
                         <li class="menu-li"><a href="#bebidas"><i class="fas fa-wine-bottle"></i>Bedidas</a></li>
-                        <li class="menu-li"><a href="#ensaladas">Ensaladas</a></li>
+                        <li class="menu-li"><a href="#ensaladas"><img src="./assets/ensalada.png" alt="">Ensaladas</a></li>
                         <li class="menu-li"><a href="#promos"><i class="fas fa-percent"></i>Promos</a></li>
                         <li class="menu-li"><a href="#contactos"><i class="far fa-id-card"></i>Contactos</a></li>
                     </ul>
@@ -116,12 +116,12 @@
                     <label class="frm_label">Direccion:</label>
                     <input class="frm_dir" type="text" placeholder="Ingresa Tu Direccion">
                     <label class="frm_label">Email:*</label>
-                    <input class="frm_email" type="mail" placeholder="Ingresa Tu Email">
+                    <input class="frm_email" type="mail" placeholder="Ingresa Tu Email" required>
                     <label class="frm_label">Asunto:*</label>
                     <input class="frm_asunto" type="text" required placeholder="Ingresa El Asunto">
                     <label class="frm_label">Mensaje:*</label>
                     <textarea class="frm_msg"cols="30" rows="10" required placeholder="Ingresa El Mensaje"></textarea>
-                    <div class="frm_btn_send"><button type="submit" class="btn_enviar">ENVIAR</button></div>
+                    <div class="frm_btn_send"><input type="submit" class="btn_enviar" id="enviar" value="ENVIAR"></div>
                     
                 </form>
     
