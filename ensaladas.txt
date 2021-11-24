@@ -1,0 +1,36 @@
+[{
+  "imgurl" : "tokyo.png",
+  "nombre" : "TOKYO",
+  "descripcion": "Zanahoria, lechuga, morron colorado, huevo duro, aceitunas negras, albah aca, burrata",
+  "precio":400
+},
+{
+  "imgurl" : "medellin.png",
+  "nombre" : "MEDELLIN",
+  "descripcion": "Zanahoria, chauhca, brote de soja, tomate cherry, mani, cebolla de verdeo",
+  "precio":400
+},
+{
+  "imgurl" : "marbella.png",
+  "nombre" : "MARBELLA",
+  "descripcion": "Pepino, albahaca, tomate cherry colorado y amarillo, crutones, queso parmesano, cebolla colorada, morron colorado",
+  "precio":400
+},
+{
+  "imgurl" : "montevideo.png",
+  "nombre" : "MONTEVIDEO",
+  "descripcion": "Rabanitos, radicheta, arandanos, burrata, pimienta",
+  "precio":400
+},
+{
+  "imgurl" : "noruega.png",
+  "nombre" : "NORUEGA",
+  "descripcion": "Radicheta, lechuga colorada, tomate cherry, cebolla",
+  "precio":400
+},
+{
+  "imgurl" : "alemania.png",
+  "nombre" : "ALEMANIA",
+  "descripcion": "Cruton, tomate cherry, albahaca, aceituna negra",
+  "precio":400
+}]

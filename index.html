@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#191919"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- fonts de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <meta name="description" content="Compra las mas exquisitas hambureusas artesanales y pasa uan cena increible con nosotros o pedila para llevar a casa">
+    <meta name="keywords" content="hamburguesa, hamburguesas, bebidas, refresco, coca cola, sprite, agua, fanta, comida, comer, cena, papas fritas, delivery, ensaladas, combos"/>
+    <title>CHILI BURGUER</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+          
+                <div class="desktop-header">
+                    <a href="index.html">
+                        <img src="./assets/logo.png" draggable="false" alt="" class="logo">
+                    </a>
+                    <p class="logotxt" draggable="false" user-select: none>CHILI BURGER</p>
+                    <!-- menu movil -->
+                    <button class="menu_bars"><i class="icomenubars fas fa-bars"></i></button>
+                    <!-- -------------------------barra de busqueda -------------------------->
+                    <div class="search "><i class="fas fa-search ico-search "></i><input class="input_search" type="text" placeholder="Buscar..."></div>
+                </div> 
+        
+                <nav class="menu">
+                    
+                    <ul class="menu-ul">
+                        <li class="menu-li"><a href="#comida"><i class="fas fa-hamburger"></i>Comida</a></li>
+                        <li class="menu-li"><a href="#bebidas"><i class="fas fa-wine-bottle"></i>Bedidas</a></li>
+                        <li class="menu-li"><a href="#ensaladas">Ensaladas</a></li>
+                        <li class="menu-li"><a href="#promos"><i class="fas fa-percent"></i>Promos</a></li>
+                        <li class="menu-li"><a href="#contactos"><i class="far fa-id-card"></i>Contactos</a></li>
+                    </ul>
+                </nav>
+        
+        </div>
+
+            <!-- boton wp -->
+            <a href="https://web.whatsapp.com/" target="_blank"><img class="wp" src="./assets/whatsapp.svg" alt=""></a>
+    </header>
+    
+    <main class="principal" id="principal">
+       <!-- <div class="bg-opacity"> -->
+        <div class="principal-h1">
+
+            <h1>Venite a cenar con nosotros
+                o pedite las hamburguesas y ensaladas mas sabrosas para comer en casa.</h1>
+        </div> 
+        
+
+            <a href="#comida" class="btn-menu">MENU</a>
+        
+       <!-- </div>  -->
+
+    </main>
+    <section id="comida" class="comida">
+        <h2 class="titulo-hamburguesas">Hamburguesas</h2>
+        <hr class="hr_hamburguesas">
+         <div class="cards_comida">
+         <!-- <div class="card">
+             <div class="divcardImg">
+                 <img src="./assets/simple.jpg" alt="" class="imgcard">
+            </div>
+             <div class="cardDescription">
+                 <h2 class="cardTitulo">ROMA</h2>
+                 <p class="cardTexto">
+                 Hamburguesa simple
+                 </p>
+                 <p class="precio">350</p>
+                 </div>
+             </div> -->
+ 
+         
+         </div>
+    </section>
+    <section id="bebidas" class="bebida">
+        <h2 class="titulo-bebidas">Bebidas</h2>
+        <hr class="hr_bebidas">
+        <div class="cards_bebida">
+    
+            
+        </div>
+    
+       </section>
+       <section  id="ensaladas" class="ensalada">
+        <h2 class="titulo-ensaladas">Ensaladas</h2>
+        <hr class="hr_ensaladas">
+        <div class="cards_ensalada">
+        </div>
+       </section>
+    
+       <section  id="promos" class="promos">
+        <h2 class="titulo-promos">Promos</h2>
+        <hr class="hr_promos">
+        <div class="cards_promo">
+            
+        </div>
+       </section>
+       <section id="contactos" class="contactos">
+        <h2 class="titulo-contactos">Contactos</h2>
+        <hr class="hr_contactos">
+        <div class="cards_contacto">
+            <div class="form">
+                <form id="form_contatos">
+                    <label class="frm_label">Nombre:*</label>
+                    <input class="frm_name" type="text" required placeholder="Ingresa Tu Nombre">
+                    <label class="frm_label">Direccion:</label>
+                    <input class="frm_dir" type="text" placeholder="Ingresa Tu Direccion">
+                    <label class="frm_label">Email:*</label>
+                    <input class="frm_email" type="mail" placeholder="Ingresa Tu Email">
+                    <label class="frm_label">Asunto:*</label>
+                    <input class="frm_asunto" type="text" required placeholder="Ingresa El Asunto">
+                    <label class="frm_label">Mensaje:*</label>
+                    <textarea class="frm_msg"cols="30" rows="10" required placeholder="Ingresa El Mensaje"></textarea>
+                    <div class="frm_btn_send"><button type="submit" class="btn_enviar">ENVIAR</button></div>
+                    
+                </form>
+    
+            </div>
+            <div class="ubicacion">
+                <div class="horarios">
+                    <p>HORARIOS DE APERTURA<br>
+                        Cena con nosotros o pedí para llevar.
+                        <br>
+                        Lunes - Domingos: 8:00 - 03:00
+                        Martes: cerrado. 
+                        Delivery: 
+                        Mediodia: 11:45 - 14:30
+                        Noche: 19:30 - 00:30
+                        </p>
+                </div>
+                <div class="mapa">
+                    <img src="./assets/mapa.png" alt="">
+                </div>
+    
+            </div>
+        </div>
+    
+    
+       </section>
+        <footer>
+            <div class="footer-redes">
+                <a href="https://es-la.facebook.com/" target="_BLANK"><img src="./assets/facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/?hl=es" target="_BLANK"><img src="./assets/instagram.png" alt=""></a>
+                <a href="https://twitter.com/?lang=es" target="_BLANK"><img src="./assets/twitter.png" alt=""></a>
+            </div>
+            <div class="footer-contactos">
+                <p>Direccion: Av Normandia 2217, C.A.B.A</p>
+                <p>Telefono: 4586-9865</p>
+                <p>Email: ventas@burger.com</p>
+               
+            </div>
+        </footer>
+    
+        </div>
+    
+        <script src="./js/script.js"></script>
+
+</body>
+</html>

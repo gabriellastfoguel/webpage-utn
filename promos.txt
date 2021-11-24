@@ -1,0 +1,24 @@
+[{
+  "imgurl" : "promo1.png",
+  "nombre" : "TRIPLE FRANCIA CON FRITAS",
+  "descripcion": "Hamburguesa de carne, lechuga, tomate, queso, cebolla colorada, mayonesa, katchup con chili y Porcion de papas fritas",
+  "precio":400
+},
+{
+  "imgurl" : "promo2.png",
+  "nombre" : "DOBLE ESPECIAL VEGANA",
+  "descripcion": "Queso doble, lechuga, tomate",
+  "precio":400
+},
+{
+  "imgurl" : "promo3.png",
+  "nombre" : "DOBLE FILIPINA CON FRITAS",
+  "descripcion": "Doble carne, lechuga, tomate, pepinillo agridulce, cebolla, queso cheddar, salsa rosa",
+  "precio":400
+},
+{
+  "imgurl" : "promo4.png",
+  "nombre" : "DOBLE CROACIA",
+  "descripcion": "Cebolla caramelizada, lechuga, salsa de garbanzo, berenjena, pan con tinta de calamar",
+  "precio":400
+}]
