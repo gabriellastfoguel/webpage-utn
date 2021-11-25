@@ -14,6 +14,30 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <meta name="description" content="Compra las mas exquisitas hambureusas artesanales y pasa uan cena increible con nosotros o pedila para llevar a casa">
     <meta name="keywords" content="hamburguesa, hamburguesas, bebidas, refresco, coca cola, sprite, agua, fanta, comida, comer, cena, papas fritas, delivery, ensaladas, combos"/>
+
+    <link rel="canonical" href="ruta-absoluta">
+
+    <meta name="description" content="Venite a cenar con nosotros o pedite las hamburguesas y ensaladas mas sabrosas para comer en casa">
+    
+   
+    <link rel="shortcut icon" href="ruta-absoluta/favicon.ico">
+    
+ 
+    <link rel="apple-touch-icon" href="ruta-absoluta/favicon.ico">
+ 
+    <meta name="twitter:card" content="summary">
+    
+    <meta name="twitter:title" content="Hamburguesas Exquisitas">
+    <meta name="twitter:image" content="ruta-absoluta/assets/bg-burger.jpg">
+    <meta name="twitter:url" content="ruta-absoluta">
+    <meta name="twitter:desctiption" content="Venite a cenar con nosotros o pedite las hamburguesas y ensaladas mas sabrosas para comer en casa">
+
+    <!-- ---------og es open graph es el formato que usa linkdin y facebok ----------->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hamburguesas Exquisitas">
+    <meta property="og:image" content="ruta-absoluta/assets/bg-burger.jpg">
+    <meta property="og:url" content="ruta-absoluta">
+    <meta property="og:desctiption" content="Venite a cenar con nosotros o pedite las hamburguesas y ensaladas mas sabrosas para comer en casa">
     <title>CHILI BURGUER</title>
 </head>
 <body>
@@ -45,7 +69,7 @@
         </div>
 
             <!-- boton wp -->
-            <a href="https://web.whatsapp.com/" target="_blank"><img class="wp" src="./assets/whatsapp.svg" alt=""></a>
+            <a href="https://wa.me/+5491159202065?text=Me%20interesa%20contactarme%20con%20ustedes" target="_blank"><img class="wp" src="./assets/whatsapp.svg" alt=""></a>
     </header>
     
     <main class="principal" id="principal">
@@ -110,17 +134,22 @@
         <hr class="hr_contactos">
         <div class="cards_contacto">
             <div class="form">
-                <form id="form_contatos">
-                    <label class="frm_label">Nombre:*</label>
-                    <input class="frm_name" type="text" required placeholder="Ingresa Tu Nombre">
-                    <label class="frm_label">Direccion:</label>
-                    <input class="frm_dir" type="text" placeholder="Ingresa Tu Direccion">
-                    <label class="frm_label">Email:*</label>
-                    <input class="frm_email" type="mail" placeholder="Ingresa Tu Email" required>
-                    <label class="frm_label">Asunto:*</label>
-                    <input class="frm_asunto" type="text" required placeholder="Ingresa El Asunto">
-                    <label class="frm_label">Mensaje:*</label>
-                    <textarea class="frm_msg"cols="30" rows="10" required placeholder="Ingresa El Mensaje"></textarea>
+                <form id="form_contatos" class="form_contatos" action="https://formspree.io/f/mwkyevqb" method="POST">
+                    <label class="frm_label">Nombre:*
+                         <input class="frm_name" type="text" name="nombre" required placeholder="Ingresa Tu Nombre">
+                    </label>
+                    <label class="frm_label">Direccion:
+                        <input class="frm_dir" type="text" name="direccion" placeholder="Ingresa Tu Direccion">
+                    </label>    
+                    <label class="frm_label">Email:*
+                        <input class="frm_email" type="mail" name="mail" placeholder="Ingresa Tu Email" required>
+                    </label>
+                    <label class="frm_label">Asunto:*
+                         <input class="frm_asunto" type="text" name="asunto" required placeholder="Ingresa El Asunto">
+                     </label>    
+                    <label class="frm_label">Mensaje:*
+                         <textarea class="frm_msg"cols="30" rows="10" name="mensaje" required placeholder="Ingresa El Mensaje"></textarea>
+                    </label>
                     <div class="frm_btn_send"><input type="submit" class="btn_enviar" id="enviar" value="ENVIAR"></div>
                     
                 </form>
@@ -139,7 +168,7 @@
                         </p>
                 </div>
                 <div class="mapa">
-                    <img src="./assets/mapa.png" alt="">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1527.9067967804647!2d-58.50138800294604!3d-34.588674385850574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6491cee8ad1%3A0xbf748eeb5138a741!2sAv.%20Nazca%204416%2C%20C1419DFU%20CABA!5e0!3m2!1ses-419!2sar!4v1637807522945!5m2!1ses-419!2sar" width="600" height="450"  allowfullscreen="" loading="lazy"></iframe>
                 </div>
     
             </div>
@@ -154,7 +183,7 @@
                 <a href="https://twitter.com/?lang=es" target="_BLANK"><img src="./assets/twitter.png" alt=""></a>
             </div>
             <div class="footer-contactos">
-                <p>Direccion: Av Normandia 2217, C.A.B.A</p>
+                <p>Direccion: Av Nazca 4416, C.A.B.A</p>
                 <p>Telefono: 4586-9865</p>
                 <p>Email: ventas@burger.com</p>
                
