@@ -332,6 +332,7 @@ a {
   width: 100%;
   color: #ffffff;
   margin: 0px;
+  margin-left: 10px;
   font-weight: 900;
   
 }
@@ -345,6 +346,7 @@ a {
   width: 95%;
   padding: 8px;
   margin-bottom: 20px;
+  font-weight: 900  ;
 
 }
 .frm_msg {
