@@ -371,6 +371,11 @@ a {
   cursor: pointer;
 }
 
+.btn_enviar:hover{
+  opacity: .8;
+
+}
+
 
 
 
