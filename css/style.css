@@ -320,8 +320,9 @@ a {
   width: 100%;
   margin: 0px;
   padding: 0px;
+  position: relative;
 }
-.form_contatos {
+.form_contactos {
   display: flex;
   flex-direction: column;
   background-color: #191919;
@@ -369,9 +370,57 @@ a {
 }
 
 
-.btn_enviar#enviar:target {
+
+
+.modal{
+position: fixed;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+background-color: #00000083;
+z-index: 999;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+opacity: 0;
+pointer-events: none;
+}
+.modal#gracias:target{
+  opacity: 1;
+  pointer-events: auto;
+  }
+.modal-content{
+  width: 500px;
+  height: 250px;
+  margin: 0 5px;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
   
-background-color: red;
+}
+.modal-content h3{
+  margin: 10px
+
+}
+
+.modal-content svg{
+  fill: #ff5e00;
+  height: 50px;
+  width: 50px;
+  margin: 10px
+}
+.form_contact_loader svg{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  
 
 }
 .ubicacion {
@@ -406,7 +455,7 @@ background-color: red;
 }
 
 .footer-redes > a > img:hover {
-  background-color: white;
+  /* background-color: white; */
 }
 .footer-redes {
   flex-direction: row;

@@ -134,7 +134,8 @@
         <hr class="hr_contactos">
         <div class="cards_contacto">
             <div class="form">
-                <form id="form_contatos" class="form_contatos" action="https://formspree.io/f/mwkyevqb" method="POST">
+                <form id="form_contactos" class="form_contactos" >
+                    <!-- action="https://formspree.io/f/mwkyevqb" method="POST" -->
                     <label class="frm_label">Nombre:*
                          <input class="frm_name" type="text" name="nombre" required placeholder="Ingresa Tu Nombre">
                     </label>
@@ -150,10 +151,37 @@
                     <label class="frm_label">Mensaje:*
                          <textarea class="frm_msg"cols="30" rows="10" name="mensaje" required placeholder="Ingresa El Mensaje"></textarea>
                     </label>
+                    <div class="form_contact_loader none">
+                        <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#d90062">
+                            <g fill="none" fill-rule="evenodd">
+                                <g transform="translate(1 1)" stroke-width="2">
+                                    <circle stroke-opacity=".5" cx="18" cy="18" r="18"/>
+                                    <path d="M36 18c0-9.94-8.06-18-18-18" 
+                                    >
+                                        <animateTransform
+                                            attributeName="transform"
+                                            type="rotate"
+                                            from="0 18 18"
+                                            to="360 18 18"
+                                            dur="1s"
+                                            repeatCount="indefinite"/>
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
                     <div class="frm_btn_send"><input type="submit" class="btn_enviar" id="enviar" value="ENVIAR"></div>
-                    
+                       
                 </form>
-    
+               
+            </div>
+            <div class="modal" id="gracias">
+                <div class="modal-content">
+                    <h3>¡Muchas Gracias <br>
+                        por tus comentarios!
+                        </h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12,18c4,0,5-4,5-4H7C7,14,8,18,12,18z"/><path d="M12,2C6.486,2,2,6.486,2,12c0,5.514,4.486,10,10,10s10-4.486,10-10C22,6.486,17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z"/><path d="M13 12l2 .012C15.012 11.55 15.194 11 16 11s.988.55 1 1h2c0-1.206-.799-3-3-3S13 10.794 13 12zM8 11c.806 0 .988.55 1 1h2c0-1.206-.799-3-3-3s-3 1.794-3 3l2 .012C7.012 11.55 7.194 11 8 11z"/></svg>
+                </div>
             </div>
             <div class="ubicacion">
                 <div class="horarios">

@@ -202,39 +202,47 @@ input_search.addEventListener("blur",()=>{
    })
 })
 
-const btn_enviar=document.querySelector(".btn_enviar");
 
-btn_enviar.addEventListener("click",()=>{
-    location.hash="#enviar"
-})
+//---------------- ContactForm -----------------------
 
-// document.addEventListener("scroll",()=>{
-//     const cards_comida=document.querySelector(".cards_comida");
-//     cards_comida.style.backgroundColor=`#${Math.round(scrollY.toString(16))}`
+    const form=document.querySelector(".form_contactos"),
+    loader=document.querySelector(".form_contact_loader"),
+    response=document.querySelector(".modal");
+  form.addEventListener("submit",(e)=>{
+  e.preventDefault();
+  
+  loader.classList.remove("none");
+  fetch("https://formsubmit.co/ajax/gabriellastfoguel@gmail.com",{
+    method:"POST",
+    body:new FormData(e.target)
+  }).then((res)=>{
+    res.ok ? res.json() : Promise.reject(res)
+  return res;
+  }).then((json)=>{
+    console.log(json)
+    location.hash="#gracias";
+    form.reset();
+  
+  }
+  ).catch((err)=>{
+  console.log(err);
+  response.querySelector("h3").innerHTML='Ocurrio un error al enviar. Intenta nuevamente' + err;
+  
+  }).finally(()=>{
+  loader.classList.add("none");
+  
+    setTimeout(() => {
+    location.hash="#close";
+      
+    }, 3000);
+    
+  
+  })
+  
+  
+  });
+  
 
-//     // `#${Math.round(scrollY)}`
-//     console.log(Math.round((scrollY.toString(16))))
-// })
 
-// scrollY.addEventListener("scroll",()=>{
-//     console.log("hola")
-// })
-
-// menu.addEventListener("mousedown",(e)=>{
-//    e.target.style.backgroundColor="#c2c2c2"
-//     setTimeout(() => {
-//         e.target.style.backgroundColor="#272727 "
-//     }, 300);
-   
-// })
-// const ico = document.getElementsByTagName("i");
-// menu.addEventListener("mouseover",(e)=>{
-//     e.target.style.backgroundColor="#fa7b26"
-
-//     e.target.firstChild.style.backgroundColor="#fa7b26"
-//      setTimeout(() => {
-//          e.target.style.backgroundColor="#272727"
-//          e.target.firstChild.style.backgroundColor="#272727"
-//      }, 500);
-//     console.log(e.target)
-//  })
+ 
+  
