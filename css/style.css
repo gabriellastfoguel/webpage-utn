@@ -665,7 +665,7 @@ footer {
   .titulo-ensaladas,
   .titulo-promos,
   .titulo-contactos {
-    padding: 50px;
+    padding: 0 50px;
     color: #f1772f;
     font-family: SansitaOne, sans-serif;
     text-align: center;
