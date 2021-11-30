@@ -10,12 +10,13 @@
   margin: 0;
   box-sizing: border-box;
   font-family: var(--font-principal);
-} 
+}
 html {
   scroll-behavior: smooth;
 }
 body {
   overflow-x: hidden;
+  background-color: #e7e7e7;
 }
 ul {
   padding: 0;
@@ -51,11 +52,12 @@ a {
   height: 70px;
 }
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
+  
 
 }
 
@@ -212,12 +214,16 @@ a {
 .titulo-ensaladas,
 .titulo-promos,
 .titulo-contactos {
+  margin: 0;
   padding: 0;
+  width: 100%;
   color: #f1772f;
   font-family: SansitaOne, sans-serif;
   text-align: center;
   font-size: 36px;
   padding-top: 70px;
+  background-color: #191919;
+
 }
 .comida,
 .bebida,
@@ -329,7 +335,7 @@ a {
 }
 
 .frm_label {
-  width: 100%;
+  width: 95%;
   color: #ffffff;
   margin: 0px;
   margin-left: 10px;
@@ -343,7 +349,7 @@ a {
 .frm_msg{
   display: block;
   margin: 0 auto;
-  width: 95%;
+  width: 90%;
   padding: 8px;
   margin-bottom: 20px;
   font-weight: 900  ;
@@ -461,9 +467,6 @@ pointer-events: none;
   margin: 0px;
 }
 
-.footer-redes > a > img:hover {
-  /* background-color: white; */
-}
 .footer-redes {
   flex-direction: row;
   flex-wrap: wrap;
@@ -489,7 +492,7 @@ pointer-events: none;
 }
 
 footer {
-  max-width: var(--max-width);
+  /* max-width: var(--max-width); */
   margin: 0 auto;
   background-color: #f01717c2;
   display: flex;
@@ -568,13 +571,17 @@ footer {
     left: 0;
     width: 100%;
     z-index: 999;
+    background-color: #272727;
+    opacity: 1;
     /* background-color: red  ; */
   }
+
   .desktop-header {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: auto;
+    height: 100%;
     margin: 0;
     padding: 0;
   }
@@ -663,9 +670,11 @@ footer {
     font-family: SansitaOne, sans-serif;
     text-align: center;
     font-size: 96px;
-    background-color: #191919;
+    background-color: #272727;
     padding-top: 160px;
+     
   }
+
 
   .cards_comida,
   .cards_bebida,
