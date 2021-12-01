@@ -216,3 +216,13 @@ form.addEventListener("submit", (e) => {
       }, 3000);
     });
 });
+// --------------buton scroll top---------------
+
+const $btn=document.querySelector(".btn-top");
+$btn.addEventListener("click",()=>{
+  window.scroll(0, 0)
+});
+
+window.addEventListener("scroll",()=>{
+  window.scrollY>500 ? $btn.classList.remove("opacity"):$btn.classList.add("opacity")
+})
