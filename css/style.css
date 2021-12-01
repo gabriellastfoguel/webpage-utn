@@ -133,6 +133,7 @@ a {
   padding: 0px;
   width: 50px;
   height: 50px;
+  margin:10px;
   background-color: #f1772f;
   border: 1px solid #ff5e00;
   border-radius: 4px;
@@ -159,6 +160,7 @@ a {
   color: #fff;
   text-decoration: none;
   width: inherit;
+
 }
 
 .principal {
@@ -168,7 +170,7 @@ a {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  min-height: 90vh;
+  min-height: 100vh;
   padding: 0px;
   max-width: var(--max-width);
   margin: 0 auto;
