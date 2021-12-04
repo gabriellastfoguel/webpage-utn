@@ -65,6 +65,11 @@ const cargarCards = (info_cards, donde) => {
     for (item of info_cards) {
       const divcard = document.createElement("DIV");
       divcard.classList.add("card");
+      divcard.dataset.nombre=item.nombre;
+      divcard.dataset.img=item.imgurl;
+      divcard.dataset.descripcion=item.descripcion;
+      divcard.dataset.precio=item.precio;
+
       const divCardImg = document.createElement("DIV");
       divCardImg.classList.add("divcardImg");
       const img = document.createElement("IMG");
@@ -225,4 +230,9 @@ $btn.addEventListener("click",()=>{
 
 window.addEventListener("scroll",()=>{
   window.scrollY>500 ? $btn.classList.remove("opacity"):$btn.classList.add("opacity")
-})
+});
+
+
+// document.addEventListener("click",(e)=>{
+// console.log(e.path);
+// });

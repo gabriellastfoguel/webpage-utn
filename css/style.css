@@ -189,7 +189,6 @@ a {
   padding: 20px;
   padding-top: 0;
   align-self: flex-start;
-  animation: animopacity 1.5s forwards;
   z-index: 400;
 }
 
@@ -470,6 +469,8 @@ pointer-events: none;
 }
 
 .footer-redes {
+  display: flex;
+
   flex-direction: row;
   flex-wrap: wrap;
   width: 20%;
@@ -529,17 +530,19 @@ footer {
 .btn-top:hover{
   cursor: pointer;
 }
+
+/* ---------------------TABLET----------------------- */
+
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 45%;
+    /* overflow: hidden; */
+  }
+}
 /* ---------------------------- */
 /* ---------------------DESKTOP----------------------- */
 @media only screen and (min-width: 1200px) {
-  .wp {
-    position: fixed;
-    z-index: 997;
-    bottom: 5px;
-    right: 0;
-    width: 72px;
-    height: 72px;
-  }
+
   .search {
     display: block;
     margin-right: 10px;
@@ -575,25 +578,14 @@ footer {
   .logo {
     height: 120px;
     width: 120px;
-    user-select: none;
-    z-index: 501;
   }
 
   .logotxt {
     font-size: 100px;
-    font-family: "Sahitya", serif;
-    padding: 0px;
-    color: #ffffff;
-    margin-left: 50px;
-    user-select: none;
-    margin: 0;
   }
 
   .header {
     position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
     z-index: 999;
     background-color: #272727;
     opacity: 1;
@@ -602,18 +594,12 @@ footer {
 
   .desktop-header {
     
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 100%;
-    margin: 0;
-    padding: 0;
+  
   }
 
   .header-container {
     max-width: var(--max-width);
-    margin: 0 auto;
-    background-color: #272727;
     height: inherit;
   }
 
@@ -621,9 +607,6 @@ footer {
     position: sticky;
     padding: 0;
     width: 100%;
-    background-color: #272727;
-    max-width: var(--max-width);
-    margin: 0px auto;
     opacity: 1;
     pointer-events: auto;
     border-top:1px solid #c2c2c2 ;
@@ -631,39 +614,14 @@ footer {
   }
 
   .menu-ul {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-  }
-  .menu-li {
-    width: 100%;
-    height: 100%;
-    max-width: var(--max-width);
-  }
-  .menu-li > a {
-    display: block;
-    padding: 5px;
-    color: #ffffff;
-    font-size: 25px;
-    text-align: center;
   }
 
-  .menu-li > a:hover {
-    background-color: #fa7b26;
-    transform: scale(1.1);
-
-    transition: all 0.5s ease;
-  }
-
-  .menu-li > a > i {
-    margin-right: 20px;
-  }
   .menu-li a{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
   
   }
   .principal {
@@ -671,17 +629,11 @@ footer {
     background-size: 200%;
 
     background-position: 20%;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
   }
   .principal-h1 > h1 {
-    color: #fff;
-    text-shadow: 1px 1px 5px black;
     font-size: 48px;
     padding: 50px 300px;
-    animation: desplegartexto 2s forwards;
     z-index: 400;
   }
   .titulo-hamburguesas,
@@ -690,11 +642,7 @@ footer {
   .titulo-promos,
   .titulo-contactos {
     padding: 0 50px;
-    color: #f1772f;
-    font-family: SansitaOne, sans-serif;
-    text-align: center;
     font-size: 96px;
-    background-color: #272727;
     padding-top: 160px;
      
   }
@@ -704,28 +652,21 @@ footer {
   .cards_bebida,
   .cards_ensalada,
   .cards_promo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
   }
   .card {
     width: 20%;
 
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0 10px;
+    margin: 10px 10px;
     height: auto;
     justify-content: flex-start;
-    border-radius: 27px 0 27px 0;
-    margin-bottom: 20px;
   }
-  .card:hover {
-    transform: scale(1.1);
+  /* .card:hover {
     box-shadow: 2px 2px 5px #a5a5a5;
     transition: all 0.5s ease;
-  }
+  } */
 
   .imgcard {
     object-fit: cover;
@@ -735,10 +676,7 @@ footer {
     height: 100%;
   }
   .cardDescription {
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
     width: 100%;
   }
 
@@ -760,20 +698,6 @@ footer {
     margin: 0;
     margin-right: 15px;
   }
-  .precio::before {
-    color: #f1772f;
-    font-size: 20px;
-    font-family: SansationRegular, sans-serif;
-    content: "$";
-  }
-
-
-  .cards_contacto {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 
   .form {
     width: 47%;
@@ -784,9 +708,6 @@ footer {
 
   .frm_label {
     width: 100%;
-    color: #ffffff;
-    margin: 0px;
-    font-weight: 900;
     
   }
   .frm_name,
@@ -794,76 +715,26 @@ footer {
   .frm_email,
   .frm_asunto,
   .frm_msg{
-    display: block;
-    margin: 0 auto;
     width: 95%;
-    padding: 8px;
-    margin-bottom: 20px;
   
-  }
-  .frm_msg {
-    overflow: scroll;
-    resize: none;
-  }
-  .frm_btn_send {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .btn_enviar {
-    margin: 0px 20px;
-    letter-spacing: 2px;
-    padding: 8px 40px;
-    border: none;
-    background-color: #f1772f;
-    font-weight: 900;
-    color: #ffffff;
   }
 
   .ubicacion {
     width: 47%;
     margin: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .horarios {
-    font-size: 24px;
-    color: #ffffff;
-  }
-  .mapa img {
-    max-width: 100%;
-    height: auto;
-    flex-grow: 1;
   }
 
   .footer-redes > a > img {
       width: 40px;
-    margin: 0px;
     margin-left: 25px;
   }
   .footer-redes {
-    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 20%;
-    justify-content: space-evenly;
-    align-content: center;
   }
-  .footer-contactos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 80%;
-    color: #000;
-    justify-content: space-evenly;
-  }
+
   .footer-contactos > p {
     margin: 5px;
     font-size: 24px;
-    font-weight: 700;
-    color: rgb(0, 0, 0);
   }
   .none {
     display: none;
