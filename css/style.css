@@ -604,14 +604,15 @@ footer {
 }
 
 
+
 .list-cart{
   width: 100%;
   height: 89%;
-  background-color: #ffb67a;
+  background-color: rgba(255, 182, 122, 0.95);
   position: fixed;
   bottom: 0;
-  left: 0;
-  opacity: .95;
+  right: 0;
+  /* opacity: .95; */
   transition: all 1s ease;
   overflow-y: auto;
   z-index: 200;    
@@ -658,8 +659,8 @@ footer {
   /* border: 1px solid blue; */
   margin-bottom: 10px;
   margin: 0 5px;
-  border-top: 2px solid #c2c2c2;
-  border-bottom: 2px solid #c2c2c2;
+  /* border-top: 3px solid #f1772f; */
+  border-bottom: 3px solid #f1772f;
 
 }
 .cart_divcardImg{
@@ -720,6 +721,7 @@ footer {
   padding: 5px 40px;
   margin-top: 10px;
   cursor: pointer;
+  visibility: hidden;
 }
 
 .cart_btn_pagar:hover{
@@ -833,14 +835,15 @@ footer {
   .list-cart{
     width: 350px;
     height: auto;
-    background-color: #ffb67a;
+    background-color: rgba(255, 182, 122, 0.95);
+
     position: fixed;
     top: 172px;
     /* right: 125px; */
-    transform: translate(243%, 0%);
+    transform: translate(-10%, 0%);
 
     left: unset;
-    opacity: .95;
+    /* opacity: .95; */
     /* transition: all .1s ease; */
     overflow-y: auto;    
     z-index: 200;    
@@ -856,7 +859,7 @@ footer {
   }
   
   .hide_list_cart{
-    transform: translate(243%, -150%);
+    transform: translate(-10%, -150%);
     opacity: 0;
     /* transition: all 1s ease; */
 
@@ -1033,6 +1036,12 @@ footer {
     margin: 5px;
     font-size: 24px;
   }
+
+  /* aca ahora */
+.card_cart_animation{
+  transition: opacity 1s ease;
+  opacity: 1;
+}
   @keyframes aparecer {
     0%{  opacity:0;
     font-size: 0;

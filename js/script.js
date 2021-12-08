@@ -293,7 +293,7 @@ const $vaciar_cart=document.querySelector(".vaciar_cart");
 const $num_compras=document.querySelector(".num_compras");
 const $btn_card=document.querySelector(".btn-card");
 const $divTotal=document.querySelector(".total");
-
+const $cart_btn_pagar=document.querySelector(".cart_btn_pagar")
 
 const addToCart =(id,titulo,cantidad,precio,imagen)=>{
   carrito.push(
@@ -324,7 +324,9 @@ if (e.target.matches(".vaciar_cart")||e.target.matches(".fa-trash-alt")){
   agregado =false;
   $divTotal.innerHTML=0;
   $num_compras.innerHTML=0;
-  $num_compras.classList.add("none")
+  $num_compras.classList.add("none");
+  $cart_btn_pagar.style.visibility="hidden"
+
   
 }
 
@@ -347,6 +349,8 @@ if (e.target.matches(".vaciar_cart")||e.target.matches(".fa-trash-alt")){
 
     if (carrito.length==0){
       addToCart(dataId,s_titulo,1,s_precio,s_img.getAttribute("src"))
+      addItem(dataId,s_titulo,1,s_precio,s_img.getAttribute("src"))
+
       agregado=true;
     }else{
       carrito.forEach(el=>{
@@ -355,7 +359,13 @@ if (e.target.matches(".vaciar_cart")||e.target.matches(".fa-trash-alt")){
           el.cantidad+=1;
           el.precio=el.precio+s_precio;
           agregado=true;
+          // aca ahora
+          const cambiar_cant = $ulCart.querySelector(`[data-cartid="${dataId}"]`);
+          console.log(cambiar_cant)
 
+          cambiar_cant.querySelector(".cart_cant").innerHTML = el.cantidad;
+          cambiar_cant.querySelector(".cart_precio").innerHTML = el.precio;
+          
         }
       });
 
@@ -363,6 +373,7 @@ if (e.target.matches(".vaciar_cart")||e.target.matches(".fa-trash-alt")){
       
     if (agregado==false){
       addToCart(dataId,s_titulo,1,s_precio,s_img.getAttribute("src"));
+      addItem(dataId,s_titulo,1,s_precio,s_img.getAttribute("src"))
 
     }
     cantidadDeUnidades+=1;
@@ -376,7 +387,9 @@ if (e.target.matches(".vaciar_cart")||e.target.matches(".fa-trash-alt")){
     
     animarGloboCant();
 
-    renderCart(carrito);
+    // renderCart(carrito);
+    $cart_btn_pagar.style.visibility="visible"
+
   }
 
 
@@ -402,17 +415,29 @@ if (e.target.matches(".vaciar_cart")||e.target.matches(".fa-trash-alt")){
 
         // aca ahora
         $num_compras.innerHTML=cantidadDeUnidades-=1;
+
+        const cambiar_cant = $ulCart.querySelector(`[data-cartid="${idDescontar}"]`);
+        console.log(cambiar_cant)
+
+        cambiar_cant.querySelector(".cart_cant").innerHTML = el.cantidad;
+        cambiar_cant.querySelector(".cart_precio").innerHTML = el.precio;
         
       }
       if (el.cantidad==0){
-        carrito.splice(index,1)
+        carrito.splice(index,1);
+        // const cambiar_cant = $ulCart.querySelector(`[data-cartid="${idDescontar}"]`);
+        $ulCart.removeChild($ulCart.querySelector(`[data-cartid="${idDescontar}"]`));
+        
+
       }
       if (cantidadDeUnidades==0)
       {
-        $num_compras.classList.add("none")
+        $num_compras.classList.add("none");
+        $cart_btn_pagar.style.visibility="hidden";
+
       }
     })
-    renderCart(carrito);
+    // renderCart(carrito);
 
     animarGloboCant();
 }
@@ -437,60 +462,129 @@ $btn_carrito.addEventListener("click",(e)=>{
 // console.log($listCart)
 
 
-const renderCart=(carrito)=>{
-  $ulCart.innerHTML="";
-  carrito.forEach(el=>{
+// const renderCart=(carrito)=>{
+//   $ulCart.innerHTML="";
+//   carrito.forEach(el=>{
     
-    const $card_cart=document.createElement("div");
-    $card_cart.classList.add("card_cart");
+//     const $card_cart=document.createElement("div");
+//     $card_cart.classList.add("card_cart");
+//     $card_cart.style.opacity="0";
+
+
     
-    $card_cart.dataset.cartid=el.id;
+    
+//     $card_cart.dataset.cartid=el.id;
 
 
-    const $cart_divcardImg=document.createElement("div");
-    $cart_divcardImg.classList.add("cart_divcardImg");
-    const $cart_imgcard=document.createElement("img");
-    $cart_imgcard.classList.add("cart_imgcard");
-    $cart_imgcard.setAttribute("src", el.imagen);
+//     const $cart_divcardImg=document.createElement("div");
+//     $cart_divcardImg.classList.add("cart_divcardImg");
+//     const $cart_imgcard=document.createElement("img");
+//     $cart_imgcard.classList.add("cart_imgcard");
+//     $cart_imgcard.setAttribute("src", el.imagen);
   
-    const $cart_cardDescription=document.createElement("div");
-    $cart_cardDescription.classList.add("cart_cardDescription");
-    const $cart_cardTitulo=document.createElement("h2");
-    $cart_cardTitulo.innerHTML=el.titulo;
-    const $cart_cant=document.createElement("div");
-    $cart_cant.classList.add("cart_cant")
-    $cart_cant.innerHTML=el.cantidad;
-    const $cart_foot=document.createElement("div");
-    $cart_foot.classList.add("cart_foot");
-    const $cart_precio=document.createElement("p");
-    $cart_precio.classList.add("cart_precio");
-    $cart_precio.innerHTML=el.precio;
-    const $btn_sacar=document.createElement("button");
-    $btn_sacar.classList.add("btn_sacar");
+//     const $cart_cardDescription=document.createElement("div");
+//     $cart_cardDescription.classList.add("cart_cardDescription");
+//     const $cart_cardTitulo=document.createElement("h2");
+//     $cart_cardTitulo.innerHTML=el.titulo;
+//     const $cart_cant=document.createElement("div");
+//     $cart_cant.classList.add("cart_cant")
+//     $cart_cant.innerHTML=el.cantidad;
+//     const $cart_foot=document.createElement("div");
+//     $cart_foot.classList.add("cart_foot");
+//     const $cart_precio=document.createElement("p");
+//     $cart_precio.classList.add("cart_precio");
+//     $cart_precio.innerHTML=el.precio;
+//     const $btn_sacar=document.createElement("button");
+//     $btn_sacar.classList.add("btn_sacar");
 
-    $btn_sacar.dataset.cartidbtn=el.id;
+//     $btn_sacar.dataset.cartidbtn=el.id;
 
 
 
-    $btn_sacar.innerHTML="-";
-    $cart_foot.appendChild($cart_precio);
-    $cart_foot.appendChild($btn_sacar);
-    $cart_cardDescription.appendChild($cart_cardTitulo);
-    $cart_cardDescription.appendChild($cart_cant);
-    $cart_cardDescription.appendChild($cart_foot);
+//     $btn_sacar.innerHTML="-";
+//     $cart_foot.appendChild($cart_precio);
+//     $cart_foot.appendChild($btn_sacar);
+//     $cart_cardDescription.appendChild($cart_cardTitulo);
+//     $cart_cardDescription.appendChild($cart_cant);
+//     $cart_cardDescription.appendChild($cart_foot);
   
-    $cart_divcardImg.appendChild($cart_imgcard);
+//     $cart_divcardImg.appendChild($cart_imgcard);
   
-    $card_cart.appendChild($cart_divcardImg);
-    $card_cart.appendChild($cart_cardDescription);
+//     $card_cart.appendChild($cart_divcardImg);
+//     $card_cart.appendChild($cart_cardDescription);
   
-    $ulCart.appendChild($card_cart);
+//     $ulCart.appendChild($card_cart);
+    // setTimeout(() => {
+    //   $card_cart.style.opacity="1";
+    //   $card_cart.style.transition="all 1s ease";
+      
+    //   // $card_cart.classList.add("card_cart_animation");
+    //   console.log($card_cart)
+    // }, 10);
 
-  })
+//   })
 
 
+// }
+
+// nueva funcion
+const addItem =(id,titulo,cantidad,precio,imagen)=>{
+
+  const $card_cart=document.createElement("div");
+
+  $card_cart.classList.add("card_cart");
+  $card_cart.style.opacity="0";
+  
+  
+  $card_cart.dataset.cartid=id;
+
+
+  const $cart_divcardImg=document.createElement("div");
+  $cart_divcardImg.classList.add("cart_divcardImg");
+  const $cart_imgcard=document.createElement("img");
+  $cart_imgcard.classList.add("cart_imgcard");
+  $cart_imgcard.setAttribute("src", imagen);
+
+  const $cart_cardDescription=document.createElement("div");
+  $cart_cardDescription.classList.add("cart_cardDescription");
+  const $cart_cardTitulo=document.createElement("h2");
+  $cart_cardTitulo.innerHTML=titulo;
+  const $cart_cant=document.createElement("div");
+  $cart_cant.classList.add("cart_cant")
+  $cart_cant.innerHTML=cantidad;
+  const $cart_foot=document.createElement("div");
+  $cart_foot.classList.add("cart_foot");
+  const $cart_precio=document.createElement("p");
+  $cart_precio.classList.add("cart_precio");
+  $cart_precio.innerHTML=precio;
+  const $btn_sacar=document.createElement("button");
+  $btn_sacar.classList.add("btn_sacar");
+
+  $btn_sacar.dataset.cartidbtn=id;
+
+
+
+  $btn_sacar.innerHTML="-";
+  $cart_foot.appendChild($cart_precio);
+  $cart_foot.appendChild($btn_sacar);
+  $cart_cardDescription.appendChild($cart_cardTitulo);
+  $cart_cardDescription.appendChild($cart_cant);
+  $cart_cardDescription.appendChild($cart_foot);
+
+  $cart_divcardImg.appendChild($cart_imgcard);
+
+  $card_cart.appendChild($cart_divcardImg);
+  $card_cart.appendChild($cart_cardDescription);
+
+  $ulCart.appendChild($card_cart);
+      setTimeout(() => {
+      $card_cart.style.opacity="1";
+      $card_cart.style.transition="all 1s ease";
+      
+      // $card_cart.classList.add("card_cart_animation");
+      console.log($card_cart)
+    }, 10);
 }
-
 
 
 // -----------------efecto titulos secciones -------------------
@@ -505,7 +599,7 @@ const cb=(entrys)=>{
   entrys.forEach(el=>{
     if (el.isIntersecting){
       el.target.classList.add("aparecer");
-      console.log(el.target)
+      // console.log(el.target)
       observer.unobserve(el.target)
 
     }else{
