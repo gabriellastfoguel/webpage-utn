@@ -1,88 +1,103 @@
 [{
+  "id" : 1,
   "imgurl" : "roma.jpg",
   "nombre" : "ROMA",
   "descripcion": "Hamburguesa Simple",
   "precio":350
 },
 {
+  "id" : 2,
   "imgurl" : "madrid.png",  
   "nombre" : "MADRID",
   "descripcion": "Doble carne, lechuga, Jamon, cebolla, queso cheddar",
   "precio":450
 },
 {
+  "id" : 3,
   "imgurl" : "frankfurt.png",
   "nombre" : "FRANKFURT",
   "descripcion": "Triple carne, huevo rayado, queso cheddar. lechuga, cebolla, pepinillo y tomate",
   "precio":525
 },
 {
+  "id" : 4,
   "imgurl" : "chile.jpg",
   "nombre" : "CHILE",
   "descripcion": "Hamburguesa de pollo, lechuga, pepinillo, tomate, cebolla colorada, rodajas de huevo",
   "precio":450
 },
 {
+  "id" : 5,
   "imgurl" : "inglaterra.png",
   "nombre" : "INGLATERRA",
   "descripcion": "Hamburguesa de lenteja, lechuga, pepinillo, tomate, cebolla, perejil, morron colorado, queso tofu",
   "precio":510
 },
 {
+  "id" : 6,
   "imgurl" : "francia.jpg",  
   "nombre" : "FRANCIA",
   "descripcion": "Hamburguesa de carne, lechuga, tomate, queso, cebolla colorada, mayonesa, katchup con chili y Porcion de papas fritas",
   "precio":630
 },
 {
+  "id" : 7,
   "imgurl" : "irlanda.png",
   "nombre" : "IRLANDA",
   "descripcion": "Hamburguesa de carne, panceta, queso cheddar, tomate, lechuga, katsup, mostaza con curry",
   "precio":580
 },
 {
+  "id" : 8,
   "imgurl" : "filipina.png",  
   "nombre" : "FILIPINA",
   "descripcion": "Doble carne, lechuga, tomate, pepinillo agridulce, cebolla, queso cheddar, salsa rosa",
   "precio":550
 },
 {
+  "id" : 9,
   "imgurl" : "oxford.png",
   "nombre" : "OXFORD",
   "descripcion": "Hamburguesa de carne, tomate, pepino, rucula, ciboulette, salsa de yogurt y porcion de papas rusticas",
   "precio":650
 },
 {
+  "id" : 10,
   "imgurl" : "suiza.png",  
   "nombre" : "SUIZA",
   "descripcion": "Hamburguesa de carne, panceta, salchicha parrillera, cebolla caramelizada, salsa de sesamo y porcion doble de papas fritas",
   "precio":680
 },
 {
+  "id" : 11,
   "imgurl" : "espana.png",  
   "nombre" : "ESPAÑA",
   "descripcion": "Hamburguesa de pollo, zanahoria, repollo, cebolla, perejil y salsa de yogurt",
   "precio":450
 },
 {
+  "id" : 12,
   "imgurl" : "polonia.png",  
   "nombre" : "POLONIA",
   "descripcion": "Hamburguesa de pollo rebozada con avena, salsa cheddar, repollo blanco y colorado, pepinillo agridulce y lechuga ",
   "precio":570
 },
 {
+  "id" : 13,
   "imgurl" : "rusia.png",  
   "nombre" : "RUSIA",
   "descripcion": "Hamburguesa de carne, panceta, queso, lechuga, huevo, pan integral y porcion de papas fritas",
   "precio":730
 },
 {
+  "id" : 14,
   "imgurl" : "belgica.png",  
   "nombre" : "BELGICA",
   "descripcion": "Hamburguesa de pollo, repollo colorado, cebolla caramelizada, palta, salsa cheddar y porcion de papas rusticas",
   "precio":730
 },
 {
+  "id" : 15,
   "imgurl" : "croacia.png",  
   "nombre" : "CROACIA",
   "descripcion": "Cebolla caramelizada, lechuga, salsa de garbanzo, berenjena, pan con tinta de calama",

@@ -41,57 +41,93 @@
     <title>CHILI BURGUER</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header-container">
-          
-                <div class="desktop-header">
-                    <a href="index.html">
-                        <img src="./assets/logo.png" draggable="false" alt="" class="logo">
-                    </a>
-                    <p class="logotxt" draggable="false" user-select: none>CHILI BURGER</p>
-                    <!-- menu movil -->
-                    <button class="menu_bars"><i class="icomenubars fas fa-bars"></i></button>
-                    <!-- -------------------------barra de busqueda -------------------------->
-                    <div class="search "><i class="fas fa-search ico-search "></i><input class="input_search" type="text" placeholder="Buscar..."></div>
-                </div> 
-        
-                <nav class="menu">
-                    
-                    <ul class="menu-ul">
-                        <li class="menu-li"><a href="#comida"><i class="fas fa-hamburger"></i>Comida</a></li>
-                        <li class="menu-li"><a href="#bebidas"><i class="fas fa-wine-bottle"></i>Bedidas</a></li>
-                        <li class="menu-li"><a href="#ensaladas"><img src="./assets/ensalada.png" alt="">Ensaladas</a></li>
-                        <li class="menu-li"><a href="#promos"><i class="fas fa-percent"></i>Promos</a></li>
-                        <li class="menu-li"><a href="#contactos"><i class="far fa-id-card"></i>Contactos</a></li>
-                    </ul>
-                </nav>
-        
+  <header class="header">
+    <div class="header-container">
+
+      <div class="desktop-header">
+        <a href="index.html">
+          <img src="./assets/logo.png" draggable="false" alt="" class="logo">
+        </a>
+        <p class="logotxt" draggable="false" user-select: none>CHILI BURGER</p>
+
+        <!-- -------------------------barra de busqueda -------------------------->
+        <div class="right">
+          <div class="search "><i class="fas fa-search ico-search "></i><input class="input_search" type="text"
+              placeholder="Buscar..."></div>
+        <!-- -------------------------boton carrito -------------------------->
+
+          <button class="btn_carrito" title="Carrito"><div class="num_compras none">1</div><i class="fas fa-shopping-cart "></i></button>
         </div>
 
-            <!-- boton wp -->
-            <a href="https://wa.me/+5491159202065?text=Me%20interesa%20contactarme%20con%20ustedes" target="_blank"><img class="wp" src="./assets/whatsapp.svg" alt=""></a>
-    </header>
-    
-    <main class="principal" id="principal">
-        <!-- ----------------boton-top------------------- -->
-        <button class="btn-top opacity"><i class="fas fa-arrow-up"></i></button>
+    <!-- boton wp -->
+    <a href="https://wa.me/+5491159202065?text=Me%20interesa%20contactarme%20con%20ustedes" target="_blank"><img class="wp" src="./assets/whatsapp.svg" alt=""></a>
 
-       <!-- <div class="bg-opacity"> -->
+        <!-- menu movil -->
+        <button class="menu_bars"><i class="icomenubars fas fa-bars"></i></button>
+      </div>
+
+      <nav class="menu">
+
+        <ul class="menu-ul">
+          <li class="menu-li"><a href="#comida"><i class="fas fa-hamburger"></i>Comida</a></li>
+          <li class="menu-li"><a href="#bebidas"><i class="fas fa-wine-bottle"></i>Bedidas</a></li>
+          <li class="menu-li"><a href="#ensaladas"><img src="./assets/ensalada.png" alt="">Ensaladas</a></li>
+          <li class="menu-li"><a href="#promos"><i class="fas fa-percent"></i>Promos</a></li>
+          <li class="menu-li"><a href="#contactos"><i class="far fa-id-card"></i>Contactos</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+
+ 
+  </header>
+
+<main class="principal" id="principal">
+    <div class="centrado-principal">
+  <!-- -------------------------lista carro compras -------------------------->
+        <div class="list-cart hide_list_cart">
+            <!-- hide_list_cart -->
+                <div class="section_top_list_cart">
+                    <button class="vaciar_cart" title="Vaciar"><i class="fas fa-trash-alt"></i></button>
+                    <div class="total">0
+                    </div>
+ 
+        
+                 </div>
+
+                <ul class="ul-cart">
+
+            
+
+                </ul>
+                <!-- boton pedir****************** -->
+                <div class="section_foot_list_cart">
+                    <button class="cart_btn_pagar" title="Pagar">Pagar</button>
+                    
+                </div>
+        </div>
+        <!-- ----------------boton-top------------------- -->
+        <button class="btn-top opacity" title="subir"><i class="fas fa-arrow-up"></i></button>
+
+        <!-- <div class="bg-opacity"> -->
         <div class="principal-h1">
 
             <h1>Venite a cenar con nosotros
-                o pedite las hamburguesas y ensaladas mas sabrosas para comer en casa.</h1>
-        </div> 
-        
+            o pedite las hamburguesas y ensaladas mas sabrosas para comer en casa.</h1>
+        </div>
 
-            <a href="#comida" class="btn-menu">MENU</a>
-        
-       <!-- </div>  -->
 
-    </main>
+        <a href="#comida" class="btn-menu">MENU</a>
+
+        <!-- </div>  -->
+    </div>  
+</main>
    
-    <h2 class="titulo-hamburguesas" id="comida">Hamburguesas</h2>
-    <section  class="comida"  >
+    <section  class="comida">
+        <div class="centrado-principal">
+        <h2 class="titulo-hamburguesas" id="comida">Hamburguesas</h2>
+
         <hr class="hr_hamburguesas">
          <div class="cards_comida">
          <!-- <div class="card">
@@ -109,109 +145,121 @@
  
          
          </div>
+         </div>
     </section>
     
-    <h2 class="titulo-bebidas" id="bebidas">Bebidas</h2>
     <section  class="bebida">
-        <hr class="hr_bebidas">
-        <div class="cards_bebida">
-    
-            
-        </div>
-    
-    </section>
-
-    <h2 class="titulo-ensaladas" id="ensaladas">Ensaladas</h2>
-    <section class="ensalada">
-    <hr class="hr_ensaladas">
-    <div class="cards_ensalada">
-    </div>
-    </section>
-
-    <h2 class="titulo-promos" id="promos">Promos</h2>
-    <section class="promos">
-    <hr class="hr_promos">
-    <div class="cards_promo">
+        <div class="centrado-principal">
+            <h2 class="titulo-bebidas" id="bebidas">Bebidas</h2>
+            <hr class="hr_bebidas">
+            <div class="cards_bebida">
         
-    </div>
+                
+            </div>
+        </div>
     </section>
 
-    <h2 class="titulo-contactos" id="contactos">Contactos</h2>
+    <section class="ensalada">
+        <div class="centrado-principal">
+
+             <h2 class="titulo-ensaladas" id="ensaladas">Ensaladas</h2>
+             <hr class="hr_ensaladas">
+            <div class="cards_ensalada">
+            </div>
+        </div>
+    </section>
+
+    <section class="promos">
+        <div class="centrado-principal">
+
+            <h2 class="titulo-promos" id="promos">Promos</h2>
+            <hr class="hr_promos">
+            <div class="cards_promo">
+                
+            </div>
+        </div>
+    </section>
+
     <section  class="contactos">
-    <hr class="hr_contactos">
-    <div class="cards_contacto">
-        <div class="form">
-            <form id="form_contactos" class="form_contactos" >
-                <!-- action="https://formspree.io/f/mwkyevqb" method="POST" -->
-                <label class="frm_label">Nombre:*
-                        <input class="frm_name" type="text" name="nombre" required placeholder="Ingresa Tu Nombre">
-                </label>
-                <label class="frm_label">Direccion:
-                    <input class="frm_dir" type="text" name="direccion" placeholder="Ingresa Tu Direccion">
-                </label>    
-                <label class="frm_label">Email:*
-                    <input class="frm_email" type="email" name="mail" placeholder="Ingresa Tu Email" required>
-                </label>
-                <label class="frm_label">Asunto:*
-                        <input class="frm_asunto" type="text" name="asunto" required placeholder="Ingresa El Asunto">
-                    </label>    
-                <label class="frm_label">Mensaje:*
-                        <textarea class="frm_msg"cols="30" rows="10" name="mensaje" required placeholder="Ingresa El Mensaje"></textarea>
-                </label>
-                <div class="form_contact_loader none">
-                    <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#d90062">
-                        <g fill="none" fill-rule="evenodd">
-                            <g transform="translate(1 1)" stroke-width="2">
-                                <circle stroke-opacity=".5" cx="18" cy="18" r="18"/>
-                                <path d="M36 18c0-9.94-8.06-18-18-18" 
-                                >
-                                    <animateTransform
-                                        attributeName="transform"
-                                        type="rotate"
-                                        from="0 18 18"
-                                        to="360 18 18"
-                                        dur="1s"
-                                        repeatCount="indefinite"/>
-                                </path>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <div class="frm_btn_send"><input type="submit" class="btn_enviar" id="enviar" value="ENVIAR"></div>
+        <div class="centrado-principal">
+
+            <h2 class="titulo-contactos" id="contactos">Contactos</h2>
+            <hr class="hr_contactos">
+            <div class="cards_contacto">
+                <div class="form">
+                    <form id="form_contactos" class="form_contactos" >
+                        <!-- action="https://formspree.io/f/mwkyevqb" method="POST" -->
+                        <label class="frm_label">Nombre:*
+                                <input class="frm_name" type="text" name="nombre" required placeholder="Ingresa Tu Nombre">
+                        </label>
+                        <label class="frm_label">Direccion:
+                            <input class="frm_dir" type="text" name="direccion" placeholder="Ingresa Tu Direccion">
+                        </label>    
+                        <label class="frm_label">Email:*
+                            <input class="frm_email" type="email" name="mail" placeholder="Ingresa Tu Email" required>
+                        </label>
+                        <label class="frm_label">Asunto:*
+                                <input class="frm_asunto" type="text" name="asunto" required placeholder="Ingresa El Asunto">
+                            </label>    
+                        <label class="frm_label">Mensaje:*
+                                <textarea class="frm_msg"cols="30" rows="10" name="mensaje" required placeholder="Ingresa El Mensaje"></textarea>
+                        </label>
+                        <div class="form_contact_loader none">
+                            <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#d90062">
+                                <g fill="none" fill-rule="evenodd">
+                                    <g transform="translate(1 1)" stroke-width="2">
+                                        <circle stroke-opacity=".5" cx="18" cy="18" r="18"/>
+                                        <path d="M36 18c0-9.94-8.06-18-18-18" 
+                                        >
+                                            <animateTransform
+                                                attributeName="transform"
+                                                type="rotate"
+                                                from="0 18 18"
+                                                to="360 18 18"
+                                                dur="1s"
+                                                repeatCount="indefinite"/>
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="frm_btn_send"><input type="submit" class="btn_enviar" id="enviar" value="ENVIAR"></div>
+                            
+                    </form>
                     
-            </form>
-            
-        </div>
-        <div class="modal" id="gracias">
-            <div class="modal-content">
-                <h3>¡Muchas Gracias <br>
-                    por tus comentarios!
-                    </h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12,18c4,0,5-4,5-4H7C7,14,8,18,12,18z"/><path d="M12,2C6.486,2,2,6.486,2,12c0,5.514,4.486,10,10,10s10-4.486,10-10C22,6.486,17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z"/><path d="M13 12l2 .012C15.012 11.55 15.194 11 16 11s.988.55 1 1h2c0-1.206-.799-3-3-3S13 10.794 13 12zM8 11c.806 0 .988.55 1 1h2c0-1.206-.799-3-3-3s-3 1.794-3 3l2 .012C7.012 11.55 7.194 11 8 11z"/></svg>
-            </div>
-        </div>
-        <div class="ubicacion">
-            <div class="horarios">
-                <p>HORARIOS DE APERTURA<br>
-                    Cena con nosotros o pedí para llevar.
-                    <br>
-                    Lunes - Domingos: 8:00 - 03:00
-                    Martes: cerrado. 
-                    Delivery: 
-                    Mediodia: 11:45 - 14:30
-                    Noche: 19:30 - 00:30
-                    </p>
-            </div>
-            <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1527.9067967804647!2d-58.50138800294604!3d-34.588674385850574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6491cee8ad1%3A0xbf748eeb5138a741!2sAv.%20Nazca%204416%2C%20C1419DFU%20CABA!5e0!3m2!1ses-419!2sar!4v1637807522945!5m2!1ses-419!2sar" width="600" height="450"  allowfullscreen="" loading="lazy"></iframe>
-            </div>
+                </div>
+                <div class="modal" id="gracias">
+                    <div class="modal-content">
+                        <h3>¡Muchas Gracias <br>
+                            por tus comentarios!
+                            </h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12,18c4,0,5-4,5-4H7C7,14,8,18,12,18z"/><path d="M12,2C6.486,2,2,6.486,2,12c0,5.514,4.486,10,10,10s10-4.486,10-10C22,6.486,17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z"/><path d="M13 12l2 .012C15.012 11.55 15.194 11 16 11s.988.55 1 1h2c0-1.206-.799-3-3-3S13 10.794 13 12zM8 11c.806 0 .988.55 1 1h2c0-1.206-.799-3-3-3s-3 1.794-3 3l2 .012C7.012 11.55 7.194 11 8 11z"/></svg>
+                    </div>
+                </div>
+                <div class="ubicacion">
+                    <div class="horarios">
+                        <p>HORARIOS DE APERTURA<br>
+                            Cena con nosotros o pedí para llevar.
+                            <br>
+                            Lunes - Domingos: 8:00 - 03:00
+                            Martes: cerrado. 
+                            Delivery: 
+                            Mediodia: 11:45 - 14:30
+                            Noche: 19:30 - 00:30
+                            </p>
+                    </div>
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1527.9067967804647!2d-58.50138800294604!3d-34.588674385850574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6491cee8ad1%3A0xbf748eeb5138a741!2sAv.%20Nazca%204416%2C%20C1419DFU%20CABA!5e0!3m2!1ses-419!2sar!4v1637807522945!5m2!1ses-419!2sar" width="600" height="450"  allowfullscreen="" loading="lazy"></iframe>
+                    </div>
 
+                </div>
+            </div>
         </div>
-    </div>
-
 
     </section>
-        <footer>
+
+    <footer>
+
             <div class="footer-redes">
                 <a href="https://es-la.facebook.com/" target="_BLANK"><img src="./assets/facebook.png" alt=""></a>
                 <a href="https://www.instagram.com/?hl=es" target="_BLANK"><img src="./assets/instagram.png" alt=""></a>
@@ -223,7 +271,9 @@
                 <p>Email: ventas@burger.com</p>
                
             </div>
-        </footer>
+        </div>
+
+    </footer>
     
       
     
